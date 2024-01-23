@@ -1,0 +1,211 @@
+:root{
+    --main-color:rgba(214, 46, 51 , 0.6);
+    scroll-behavior: auto;
+}
+a{
+   text-decoration: none;
+  
+}
+ul{
+    list-style: none;
+}
+/* Home Section Style */
+
+.home-section{
+   height: 100vh;
+   background-image: url(../images/events-heavenly-header.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ 
+}
+.home-section .overlay{
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    position: relative;
+} 
+
+.home-section .overlay .home-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+.home-section .overlay .home-content h2{
+    font-size: 60px;
+    color: white;
+    font-weight: 500;
+}
+.home-section .overlay .home-content p{
+    color: white;
+}
+
+.home-section .overlay .home-content .openNav{
+   position: absolute;
+   left: 50px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+/* SideBar Style */
+
+.home-section .overlay .left-side{
+    background-color: black;
+    height: 100%;
+    padding: 40px 40px;
+    position: fixed;
+    z-index: 9999;
+   display: none;
+   width: 250px;
+   white-space: nowrap;
+   transition: display 1s;
+}
+
+.home-section .overlay .left-side a{
+    color: white;
+    font-size: 25px;
+    padding-top: 30px;
+    transition: color 1s;
+    display: block;
+   
+    
+}
+.home-section .overlay .left-side a:hover{
+   color: var(--main-color);
+
+}
+
+.home-section .overlay .left-side .closebtn{
+      
+       position: absolute;
+       top: 10px;
+       right: 10px;
+      
+}
+
+
+/* sliderDown Section style */
+#sliderDown{
+    margin-top: 20px;
+    padding: 30px ;
+    
+}
+#sliderDown .duration-content .title{
+   background-color: rgba(214, 46, 51 , 0.6);
+   padding: 20px 10px;
+   cursor: pointer;
+    margin: 0;
+   color: white;
+
+}
+#sliderDown .duration-content .innerDuration{
+ background-color: #ccc;
+ padding: 10px 10px;
+ display: none;
+}
+
+
+/* counterDown Section style */
+
+.counterDown{
+    background-image: url(../images/invitation-2508607__340.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 20px;
+    position: relative;
+    height: 50vh;
+    /* background-color: black; */
+}
+.counterDown .counter-overlay{
+   background-color: var(--main-color);
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   overflow: hidden;
+}
+.counterDown .time{
+     border: 2px solid white;
+     text-align: center;
+    padding: 30px 0px;
+    color: white;
+    font-size: 26px;
+}
+
+
+
+
+/* Contact us secion style */
+#contact-us{
+   margin-top: 50px;
+   padding: 20px 20px;
+}
+#contact-us .header h2{
+  text-transform: uppercase;
+  font-size: 35px;
+ color: #444;
+ font-weight: bold;
+ margin-bottom: 20px;
+}
+#contact-us .header p{
+  text-align: center;
+  font-weight: 300;
+  color: #777;
+
+}
+
+#contact-us .contact-info h3{
+    font-size: 18px;
+    font-weight: bold;
+    color:#444;
+}
+#contact-us .contact-info p{
+  font-size: 16px;
+  line-height: 26px;
+  color: #777;
+
+}
+#contact-us .contact-detailes {
+  margin-top: 30px;
+  
+}
+#contact-us .contact-detailes p {
+   margin-bottom: 35px;
+   text-align: center;
+}
+#contact-us .contact-detailes .red {
+     color: red;
+}
+#contact-us .social-list {
+    margin-bottom: 30px;
+}
+
+#contact-us .social-list i {
+    margin-right: 10px;
+    border: 1px solid #999;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    text-align: center;
+    color: #444;
+    
+   
+}
+#contact-us .social-list i:hover{
+     background-color: #dc3545;
+     color: white;
+}
+
+#contact-us .input-lg{
+    margin-top: 20px;
+    border-radius: none;
+}
